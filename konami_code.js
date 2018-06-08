@@ -14,7 +14,7 @@ const codes = [
 function init() {
   // your code here
   var index = 0;
-  document.addEventListener('keydown', function(e) {
+  document.body.addEventListener('keydown', function(e) {
   	index = e.key == codes[index] ? index + 1 : 0;
   	if (index == codes.length) {
       alert('secret'); index = 0;
